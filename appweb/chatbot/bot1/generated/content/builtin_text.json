@@ -1,0 +1,240 @@
+[
+  {
+    "id": "builtin_text-pSsHWg",
+    "formData": {
+      "text": "👋, {{state.$r}}!",
+      "variations": [
+        "Hello, {{state.$r}}!",
+        "Welcome to Botpress, {{state.$r}}!"
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:57:36.026Z"
+  },
+  {
+    "id": "builtin_text-AY5SSW",
+    "formData": {
+      "text": "This is the first time we speak 🤖",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:59:51.118Z"
+  },
+  {
+    "id": "builtin_text-bFsOmf",
+    "formData": {
+      "text": "We already spoke {{state.$r}} times!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:00:37.593Z"
+  },
+  {
+    "id": "builtin_text-TtzrCV",
+    "formData": {
+      "text": "Alright, I have forgotten your name.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:06:41.963Z"
+  },
+  {
+    "id": "builtin_text-z0J9qh",
+    "formData": {
+      "text": "Olá! qual seu nome?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:08:41.241Z"
+  },
+  {
+    "id": "builtin_text-X069Le",
+    "formData": {
+      "text": "Try saying something like \"forget my name\"!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:16:53.227Z"
+  },
+  {
+    "id": "builtin_text-kKQ8C3",
+    "formData": {
+      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:17:55.317Z"
+  },
+  {
+    "id": "builtin_text-p1xzKN",
+    "formData": {
+      "text": "Olá {{state.$r}} corno, quer ver um jogo que se encaixa perfeitamente para cornos como você?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:09:55.349Z"
+  },
+  {
+    "id": "builtin_text-JFn~IR",
+    "formData": {
+      "text": "aqui corno, joga fogarel gratuito, vulgo jogo de corno",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:26:28.315Z"
+  },
+  {
+    "id": "builtin_text-3egThR",
+    "formData": {
+      "text": "Então vai toma no seu cu, sai daqui puta",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:27:13.741Z"
+  },
+  {
+    "id": "builtin_text-XJLB6g",
+    "formData": {
+      "text": "FALA SIM OU NAO PUTA",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:27:49.971Z"
+  },
+  {
+    "id": "builtin_text-ZeOlsb",
+    "formData": {
+      "text": "{{state.$r}}, você poderia jogar Fortnite, é um grande titulo no mercado! ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:57:40.878Z"
+  },
+  {
+    "id": "builtin_text-6QNia4",
+    "formData": {
+      "text": "Volte logo {{state.$r}}, estamos esperando seu contato em breve!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:58:13.544Z"
+  },
+  {
+    "id": "builtin_text-adAQoW",
+    "formData": {
+      "text": "Fortnite é um jogo eletrônico multijogador online revelado originalmente em 2011, desenvolvido pela Epic Games e lançado como diferentes modos de jogo que compartilham a mesma jogabilidade e motor gráfico de jogo.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:51:10.660Z"
+  },
+  {
+    "id": "builtin_text-8Eoo5V",
+    "formData": {
+      "text": "Rocket League é um jogo eletrônico de futebol veicular desenvolvido e publicado pela Psyonix. Foi lançado pela primeira vez para Microsoft Windows e PlayStation 4 em julho de 2015, com as portes para o Xbox One, MacOS, Linux e Nintendo Switch sendo lançados posteriormente.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:52:58.606Z"
+  },
+  {
+    "id": "builtin_text-dmvEZ3",
+    "formData": {
+      "text": "Garena Free Fire é um jogo eletrônico mobile de ação-aventura do gênero battle royale, desenvolvido pela 111dots Studio e publicado pela Garena. O jogo obteve um beta aberto em novembro de 2017 e foi lançado oficialmente para Android de iOS em 4 de dezembro de 2017.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:55:51.507Z"
+  },
+  {
+    "id": "builtin_text-rS8c5n",
+    "formData": {
+      "text": "League of Legends é um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009, para os sistemas Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients do jogo Warcraft III: The Frozen Throne.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:57:05.350Z"
+  },
+  {
+    "id": "builtin_text-ssLw79",
+    "formData": {
+      "text": "Hearthstone, originalmente conhecido como Hearthstone: Heroes of Warcraft, é um jogo de cartas estratégico on-line desenvolvido e publicado pela empresa Blizzard Entertainment. É o primeiro jogo da empresa gratuito e também o primeiro a ser lançado para plataformas móveis.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:58:22.202Z"
+  },
+  {
+    "id": "builtin_text-4icnoL",
+    "formData": {
+      "text": "Call of Duty: Black Ops Cold War é um jogo de tiro em primeira pessoa desenvolvido pela Treyarch e Raven Software e publicado pela Activision. É o sexto jogo da série Black Ops, e o décimo sétimo jogo da série Call of Duty ao todo.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:17:53.762Z"
+  },
+  {
+    "id": "builtin_text-iFOqI3",
+    "formData": {
+      "text": "World of Warcraft é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004. O jogo se passa no mundo fantástico de Azeroth, introduzido no primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:19:04.116Z"
+  },
+  {
+    "id": "builtin_text-BKD8an",
+    "formData": {
+      "text": "Overwatch é um jogo eletrônico multijogador de tiro em primeira pessoa desenvolvido e publicado pela Blizzard Entertainment. Foi lançado em 24 de maio de 2016 para Microsoft Windows, PlayStation 4 e Xbox One e em 15 de outubro de 2019 para Nintendo Switch.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:20:17.997Z"
+  },
+  {
+    "id": "builtin_text-Mg56a~",
+    "formData": {
+      "text": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:21:54.948Z"
+  },
+  {
+    "id": "builtin_text-e0r7I3",
+    "formData": {
+      "text": "Diablo III é um RPG de ação hack and slash desenvolvido pela Blizzard Entertainment, o terceiro título da série Diablo. Sua produção foi revelada em 28 de junho de 2008, na Blizzard Entertainment Worldwide Invitational. O jogo foi lançado oficialmente em 15 de maio de 2012.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:23:00.127Z"
+  },
+  {
+    "id": "builtin_text-N6rmkR",
+    "formData": {
+      "text": "https://store.steampowered.com/?l=portuguese",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:29:33.482Z"
+  },
+  {
+    "id": "builtin_text-GRDWDm",
+    "formData": {
+      "text": "https://www.blizzard.com/pt-br/",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:31:30.407Z"
+  },
+  {
+    "id": "builtin_text-Wyrjnu",
+    "formData": {
+      "text": "https://www.epicgames.com/store/pt-BR/",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:33:07.433Z"
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "version": "0.1",
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-Jn8r6q",
+    "keywords": {
+      "varWow": [
+        "varWow",
+        "World of Warcraft"
+      ],
+      "VarCod": [
+        "VarCod",
+        "Call of Duty"
+      ],
+      "varOver": [
+        "varOver",
+        "Overwatch"
+      ],
+      "varGta": [
+        "varGta",
+        "GTA V"
+      ],
+      "varDiablo": [
+        "varDiablo",
+        "Diablo III"
+      ],
+      "varCompra": [
+        "varCompra",
+        "Onde posso comprar?"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-Jn8r6q {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "643250",
+      "onReceive": null
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-Jn8r6q\",\"keywords\":{\"varWow\":[\"varWow\",\"World of Warcraft\"],\"VarCod\":[\"VarCod\",\"Call of Duty\"],\"varOver\":[\"varOver\",\"Overwatch\"],\"varGta\":[\"varGta\",\"GTA V\"],\"varDiablo\":[\"varDiablo\",\"Diablo III\"],\"varCompra\":[\"varCompra\",\"Onde posso comprar?\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "id": "029524",
+      "onEnter": []
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "__skill-choice-invalid-inc"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-invalid-count'] <= 3",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "621509",
+      "onReceive": null
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-Jn8r6q {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "038256",
+      "onReceive": null
+    }
+  ]
+}

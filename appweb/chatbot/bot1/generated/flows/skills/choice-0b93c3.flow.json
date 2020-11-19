@@ -1,0 +1,112 @@
+{
+  "version": "0.1",
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-rgUYNm",
+    "keywords": {
+      "varsim": [
+        "varsim",
+        "SIM"
+      ],
+      "varnao": [
+        "varnao",
+        "NAO"
+      ],
+      "varFort": [
+        "varFort",
+        "Fortnite"
+      ],
+      "varRock": [
+        "varRock",
+        "Rocketleague"
+      ],
+      "varFree": [
+        "varFree",
+        "FreeFire"
+      ],
+      "varLeag": [
+        "varLeag",
+        "League of Legends"
+      ],
+      "varHeart": [
+        "varHeart",
+        "Hearthstone"
+      ],
+      "varOp": [
+        "varOp",
+        "Gostaria de ver opções pagas?"
+      ],
+      "varPag": [
+        "varPag",
+        "Gostaria de ver opções pagas?"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-rgUYNm {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "962955",
+      "onReceive": null
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-rgUYNm\",\"keywords\":{\"varsim\":[\"varsim\",\"SIM\"],\"varnao\":[\"varnao\",\"NAO\"],\"varFort\":[\"varFort\",\"Fortnite\"],\"varRock\":[\"varRock\",\"Rocketleague\"],\"varFree\":[\"varFree\",\"FreeFire\"],\"varLeag\":[\"varLeag\",\"League of Legends\"],\"varHeart\":[\"varHeart\",\"Hearthstone\"],\"varOp\":[\"varOp\",\"Gostaria de ver opções pagas?\"],\"varPag\":[\"varPag\",\"Gostaria de ver opções pagas?\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "id": "237258",
+      "onEnter": []
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "__skill-choice-invalid-inc"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-invalid-count'] <= 3",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "923344",
+      "onReceive": null
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-rgUYNm {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "343004",
+      "onReceive": null
+    }
+  ]
+}

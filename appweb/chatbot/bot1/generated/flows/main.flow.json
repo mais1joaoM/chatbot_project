@@ -1,0 +1,331 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "a54a82eb7c",
+      "name": "entry",
+      "onEnter": [
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "state.$r !== null",
+          "node": "ask-name"
+        },
+        {
+          "condition": "true",
+          "node": "ask-name"
+        }
+      ]
+    },
+    {
+      "id": "d29fc6b771",
+      "name": "ask-name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-7e4125"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-z0J9qh"
+      ],
+      "onReceive": [
+        "setUserVariable {\"name\":\"nickname\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}",
+        "getUserVariable {\"name\":\"nickname\",\"output\":\"$r\"}"
+      ]
+    },
+    {
+      "id": "skill-7e4125",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-7e4125",
+      "flow": "skills/choice-7e4125.flow.json",
+      "next": [
+        {
+          "caption": "User picked [varsim]",
+          "condition": "state['skill-choice-ret'] == \"varsim\"",
+          "node": "choice-0b93c3"
+        },
+        {
+          "caption": "User picked [varnao]",
+          "condition": "state['skill-choice-ret'] == \"varnao\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-0b93c3",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-0b93c3",
+      "flow": "skills/choice-0b93c3.flow.json",
+      "next": [
+        {
+          "caption": "User picked [varsim]",
+          "condition": "state['skill-choice-ret'] == \"varsim\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [varnao]",
+          "condition": "state['skill-choice-ret'] == \"varnao\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [varFort]",
+          "condition": "state['skill-choice-ret'] == \"varFort\"",
+          "node": "node-7229"
+        },
+        {
+          "caption": "User picked [varRock]",
+          "condition": "state['skill-choice-ret'] == \"varRock\"",
+          "node": "node-1e26"
+        },
+        {
+          "caption": "User picked [varFree]",
+          "condition": "state['skill-choice-ret'] == \"varFree\"",
+          "node": "node-fe6b"
+        },
+        {
+          "caption": "User picked [varLeag]",
+          "condition": "state['skill-choice-ret'] == \"varLeag\"",
+          "node": "node-3eee"
+        },
+        {
+          "caption": "User picked [varHeart]",
+          "condition": "state['skill-choice-ret'] == \"varHeart\"",
+          "node": "node-2202"
+        },
+        {
+          "caption": "User picked [varOp]",
+          "condition": "state['skill-choice-ret'] == \"varOp\"",
+          "node": "choice-120ea5"
+        },
+        {
+          "caption": "User picked [varPag]",
+          "condition": "state['skill-choice-ret'] == \"varPag\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "198eec9076",
+      "name": "node-7229",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-adAQoW"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "0488b4c7ca",
+      "name": "node-1e26",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-8Eoo5V"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "80fe2159ef",
+      "name": "node-fe6b",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-dmvEZ3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "edfcb489ad",
+      "name": "node-3eee",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-rS8c5n"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "100e841d49",
+      "name": "node-2202",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-ssLw79"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-120ea5",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-120ea5",
+      "flow": "skills/choice-120ea5.flow.json",
+      "next": [
+        {
+          "caption": "User picked [varWow]",
+          "condition": "state['skill-choice-ret'] == \"varWow\"",
+          "node": "node-cffe"
+        },
+        {
+          "caption": "User picked [VarCod]",
+          "condition": "state['skill-choice-ret'] == \"VarCod\"",
+          "node": "node-3fbb"
+        },
+        {
+          "caption": "User picked [varOver]",
+          "condition": "state['skill-choice-ret'] == \"varOver\"",
+          "node": "node-4eb8"
+        },
+        {
+          "caption": "User picked [varGta]",
+          "condition": "state['skill-choice-ret'] == \"varGta\"",
+          "node": "node-6a42"
+        },
+        {
+          "caption": "User picked [varDiab...]",
+          "condition": "state['skill-choice-ret'] == \"varDiablo\"",
+          "node": "node-4dc0"
+        },
+        {
+          "caption": "User picked [varComp...]",
+          "condition": "state['skill-choice-ret'] == \"varCompra\"",
+          "node": "choice-14d370"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "df2aea5ac4",
+      "name": "node-3fbb",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-4icnoL"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ecf0013510",
+      "name": "node-cffe",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-iFOqI3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "4ff0cdccba",
+      "name": "node-4eb8",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-BKD8an"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "41d1dcaeba",
+      "name": "node-6a42",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-Mg56a~"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f742aab317",
+      "name": "node-4dc0",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-e0r7I3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-14d370",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-14d370",
+      "flow": "skills/choice-14d370.flow.json",
+      "next": [
+        {
+          "caption": "User picked [varSteam]",
+          "condition": "state['skill-choice-ret'] == \"varSteam\"",
+          "node": "node-991e"
+        },
+        {
+          "caption": "User picked [varBat]",
+          "condition": "state['skill-choice-ret'] == \"varBat\"",
+          "node": "node-77ce"
+        },
+        {
+          "caption": "User picked [varEpic]",
+          "condition": "state['skill-choice-ret'] == \"varEpic\"",
+          "node": "node-e3ac"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "edef75ab5a",
+      "name": "node-991e",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-N6rmkR"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "b6c223675b",
+      "name": "node-77ce",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-GRDWDm"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "5a6039e013",
+      "name": "node-e3ac",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-Wyrjnu"
+      ],
+      "onReceive": null
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "builtin_single-choice-v3UyZg",
+    "formData": {
+      "text": "sim ou nao puta",
+      "choices": [
+        {
+          "title": "Boa!! o jogo perfeito pra você é WOW joga essa porra",
+          "value": "sim"
+        },
+        {
+          "title": "a ti toma no cu então, sai daqui",
+          "value": "nao"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:16:43.273Z"
+  },
+  {
+    "id": "builtin_single-choice-rgUYNm",
+    "formData": {
+      "text": "Então {{state.$r}} pelo seu historico de pesquisas verifiquei que você prefere jogos FreeToPlay, tenho algumas opções aqui pra você!",
+      "choices": [
+        {
+          "title": "Fortnite",
+          "value": "varFort"
+        },
+        {
+          "title": "Rocketleague",
+          "value": "varRock"
+        },
+        {
+          "title": "FreeFire",
+          "value": "varFree"
+        },
+        {
+          "title": "League of Legends",
+          "value": "varLeag"
+        },
+        {
+          "title": "Hearthstone",
+          "value": "varHeart"
+        },
+        {
+          "title": "Gostaria de ver opções pagas?",
+          "value": "varOp"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-10-07T00:55:59.148Z"
+  },
+  {
+    "id": "builtin_single-choice-TjKQiS",
+    "formData": {
+      "text": "E ai {{state.$r}} gostaria de ver um jogo perfeito para você?",
+      "choices": [
+        {
+          "title": "SIM",
+          "value": "varsim"
+        },
+        {
+          "title": "NÃO",
+          "value": "varnao"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T18:27:47.419Z"
+  },
+  {
+    "id": "builtin_single-choice-Jn8r6q",
+    "formData": {
+      "text": "Tenho essas opções pagas que você vai amar!!!",
+      "choices": [
+        {
+          "title": "World of Warcraft",
+          "value": "varWow"
+        },
+        {
+          "title": "Call of Duty",
+          "value": "VarCod"
+        },
+        {
+          "title": "Overwatch",
+          "value": "varOver"
+        },
+        {
+          "title": "GTA V",
+          "value": "varGta"
+        },
+        {
+          "title": "Diablo III",
+          "value": "varDiablo"
+        },
+        {
+          "title": "Onde posso comprar?",
+          "value": "varCompra"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:08:57.698Z"
+  },
+  {
+    "id": "builtin_single-choice-pg8YqU",
+    "formData": {
+      "text": "Plataformas com jogos pagos e gratis tambem!!",
+      "choices": [
+        {
+          "title": "Steam",
+          "value": "varSteam"
+        },
+        {
+          "title": "Battle Net",
+          "value": "varBat"
+        },
+        {
+          "title": "Epic Games",
+          "value": "varEpic"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-11-19T19:26:08.707Z"
+  }
+]
